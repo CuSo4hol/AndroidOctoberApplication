@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fjh.octoberapplication.HelloActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前用户为:"/>
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <Button
+
+            android:id="@+id/ListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="change"
+            android:text="ListView" />
+
+        <Button
+
+            android:id="@+id/RecButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="change"
+            android:text="RecyclerView" />
+        <Button
+            android:id="@+id/WebButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="change"
+            android:text="WebView"/>
+        <Button
+            android:id="@+id/BaiduButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="change"
+            android:text="百度"/>
+
+        <Button
+            android:id="@+id/HandlerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handlertest"
+            android:layout_marginTop="20dp"
+            android:onClick="change"
+
+
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
